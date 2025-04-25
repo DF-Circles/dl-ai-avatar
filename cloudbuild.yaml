@@ -1,8 +1,7 @@
-# cloudbuild.yaml
 timeout: "1200s"
 
 steps:
-  # Step 1: Fetch the extractor script & requirements from GCS
+  # Step 1: Fetch the script & requirements
   - name: 'gcr.io/cloud-builders/gsutil'
     args:
       - cp
@@ -10,31 +9,35 @@ steps:
       - gs://gfs_model/scripts/requirements.txt
       - .
 
-  # Step 2: Install dependencies & run extractor
+  # Step 2: Clone the repo
+  - name: 'gcr.io/cloud-builders/git'
+    args:
+      - clone
+      - https://github.com/gfrimp/df-docs.git
+
+  # Step 3: Install dependencies & run extractor
   - name: 'python:3.9'
     entrypoint: bash
     args:
       - -c
       - |
         pip install -r requirements.txt
-        python script.py \
-          --repo-path . \
-          --config-path mkdocs.yml \
-          --output all_docs.txt
+        python script.py
 
-  # Step 3: Upload the result to your docs bucket
+  # Step 4: Upload the result
   - name: 'gcr.io/cloud-builders/gsutil'
     args:
       - cp
       - docs.txt
       - gs://gfs_model/docs.txt
 
-  # Step 4: Logging
+  # Step 5: Logging
   - name: 'bash'
     args:
       - 'echo'
-      - 'Hello World'
-  
+      - 'Build complete'
+
 logsBucket: 'gs://gfs_model'
+
 options:
   logging: GCS_ONLY
