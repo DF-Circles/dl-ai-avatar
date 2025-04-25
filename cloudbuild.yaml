@@ -29,7 +29,7 @@ steps:
     args:
       - cp
       - docs.txt
-      - gs://gfs_model/docs.txt
+      - gs://gfs_model/df/docs.txt
 
   # Step 5: Logging
   - name: 'bash'
@@ -37,7 +37,7 @@ steps:
       - 'echo'
       - 'Build complete'
 
-logsBucket: 'gs://gfs_model'
+logsBucket: 'gs://gfs_model/df'
 
 options:
   logging: GCS_ONLY
