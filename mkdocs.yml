@@ -1,6 +1,6 @@
 # Project information
 site_name: DF Book
-site_url: https://DF-Circles.github.io/df-book
+site_url: https://github.com/gfrimp/df-docs
 site_author: DF-WG-Documentation Circle
 site_description: >-
   A comprehensive documentation resource for Deep Funding Circle operations, providing guides, 
@@ -8,8 +8,8 @@ site_description: >-
   Deep Funding community.
 
 # Repository
-repo_name: DF-Circles/df-book
-repo_url: https://github.com/DF-Circles/df-book
+repo_name: df-docs
+repo_url: https://github.com/gfrimp/df-docs
 
 # Copyright
 copyright: Copyright &copy; 2024 DF-WG-Documentation Circle
