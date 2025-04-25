@@ -37,7 +37,7 @@ steps:
       - 'echo'
       - 'Build complete'
 
-logsBucket: 'gs://gfs_model/df'
+logsBucket: 'gs://gfs_model/df/logs'
 
 options:
   logging: GCS_ONLY
