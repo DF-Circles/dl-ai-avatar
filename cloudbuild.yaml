@@ -28,3 +28,11 @@ steps:
       - cp
       - docs.txt
       - gs://gfs_model/docs.txt
+
+
+  # Step 4: Logging
+  - name: 'bash'
+    args: ['echo', 'Hello World']
+  logsBucket: 'gs://gfs_model/'
+  options:
+    loggin: GCS_ONLY
