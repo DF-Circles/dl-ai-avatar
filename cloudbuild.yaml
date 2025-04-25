@@ -34,6 +34,7 @@ steps:
     args:
       - 'echo'
       - 'Hello World'
-  logsBucket: 'gs://gfs_model'
-  options:
-    logging: GCS_ONLY
+  
+logsBucket: 'gs://gfs_model'
+options:
+  logging: GCS_ONLY
