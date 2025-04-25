@@ -1,0 +1,30 @@
+# cloudbuild.yaml
+timeout: "1200s"
+
+steps:
+  # Step 1: Fetch the extractor script & requirements from GCS
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args:
+      - cp
+      - gs://gfs_model/scripts/script.py
+      - gs://gfs_model/scripts/requirements.txt
+      - .
+
+  # Step 2: Install dependencies & run extractor
+  - name: 'python:3.9'
+    entrypoint: bash
+    args:
+      - -c
+      - |
+        pip install -r requirements.txt
+        python script.py \
+          --repo-path . \
+          --config-path mkdocs.yml \
+          --output all_docs.txt
+
+  # Step 3: Upload the result to your docs bucket
+  - name: 'gcr.io/cloud-builders/gsutil'
+    args:
+      - cp
+      - docs.txt
+      - gs://gfs_model/docs.txt
