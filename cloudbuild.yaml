@@ -15,7 +15,7 @@ steps:
     args:
       - '-c'
       - |
-        TOKEN=$(gcloud secrets versions access latest --secret=github-token)
+        TOKEN=$(gcloud secrets versions access latest --secret=cloudbuildgithub-token)
         git clone https://oauth2:${TOKEN}@github.com/DF-Circles/dl-ai-avatar.git
   
 
