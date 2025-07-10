@@ -17,7 +17,7 @@ steps:
       - |
           echo "Cloning with GitHub token..."
           TOKEN=$(gcloud secrets versions access latest --secret=github-token)
-          git clone https://oauth2:\${TOKEN}@github.com/DF-Circles/dl-ai-avatar.git
+          git clone https://oauth2:$$TOKEN@github.com/DF-Circles/dl-ai-avatar.git
   
 
   # Step 3: Install dependencies & run extractor
