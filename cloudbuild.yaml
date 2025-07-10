@@ -28,7 +28,7 @@ steps:
       - |
         pip install -r requirements.txt
         export REPO_PATH="./dl-ai-avatar"
-        python script.py --repo-path "$REPO_PATH"
+        python script.py --repo-path "$$REPO_PATH"
 
   # Step 4: Upload the result
   - name: 'gcr.io/cloud-builders/gsutil'
