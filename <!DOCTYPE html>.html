@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goyazi Chromebook Return and Refund Policy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Visualization & Content Choices:
+No python code found.
+        - Section 3 (How to Initiate): Goal: Inform. Method: HTML text, ordered list. Interaction: Nav scroll. Justification: Step-by-step process.
+        - Section 4 (Refund Process): Goal: Inform. Method: HTML text, lists. Interaction: Nav scroll. Justification: Explanation of refund mechanics.
+        - Section 5 (Changes to Policy): Goal: Inform. Method: HTML text. Interaction: Nav scroll. Justification: Standard policy clause.
+        - Section Contact Us: Goal: Inform. Method: HTML text. Interaction: Nav scroll. Justification: Easy access to support details.
+        - All content is textual, directly from the source policy. No traditional data charts needed. Interactions focus on navigation and readability. Library/Method: HTML, Tailwind CSS, Vanilla JS.
+    -->
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        /* Custom scrollbar for webkit browsers */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; /* slate-100 */ }
+        ::-webkit-scrollbar-thumb { background: #60a5fa; /* blue-400 */ border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3b82f6; /* blue-500 */ }
+        .content-section h2 { margin-bottom: 1rem; }
+        .content-section h3 { margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .content-section p, .content-section ul, .content-section ol { margin-bottom: 1rem; line-height: 1.75; }
+        .content-section ul, .content-section ol { padding-left: 1.5rem; }
+        .content-section ul li { list-style-type: disc; margin-bottom: 0.5rem; }
+        .content-section ol li { list-style-type: decimal; margin-bottom: 0.5rem; }
+        .nav-link.active { background-color: #2563eb; /* blue-600 */ color: white; }
+        @media (max-width: 768px) {
+            .sidebar { transform: translateX(-100%); transition: transform 0.3s ease-in-out; }
+            .sidebar.open { transform: translateX(0); }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-100 text-slate-800">
+    <div class="flex min-h-screen">
+        <aside id="sidebar" class="sidebar fixed inset-y-0 left-0 z-30 w-64 bg-slate-800 text-slate-200 p-6 space-y-4 transform md:translate-x-0 md:sticky md:flex md:flex-col shadow-lg">
+            <h1 class="text-2xl font-bold text-white border-b border-slate-700 pb-3">Policy Sections</h1>
+            <nav class="flex-grow">
+                <ul class="space-y-2">
+                    <li><a href="#overview" class="nav-link block px-4 py-2.5 rounded-md hover:bg-slate-700 hover:text-white transition-colors duration-150">Overview</a></li>
+                    <li><a href="#eligibility" class="nav-link block px-4 py-2.5 rounded-md hover:bg-slate-700 hover:text-white transition-colors duration-150">1. Eligibility</a></li>
+                    <li><a href="#non-refundable" class="nav-link block px-4 py-2.5 rounded-md hover:bg-slate-700 hover:text-white transition-colors duration-150">2. Non-Refundable</a></li>
+                    <li><a href="#initiate-claim" class="nav-link block px-4 py-2.5 rounded-md hover:bg-slate-700 hover:text-white transition-colors duration-150">3. Initiate Claim</a></li>
+                    <li><a href="#refund-process" class="nav-link block px-4 py-2.5 rounded-md hover:bg-slate-700 hover:text-white transition-colors duration-150">4. Refund Process</a></li>
+                    <li><a href="#changes" class="nav-link block px-4 py-2.5 rounded-md hover:bg-slate-700 hover:text-white transition-colors duration-150">5. Policy Changes</a></li>
+                    <li><a href="#contact" class="nav-link block px-4 py-2.5 rounded-md hover:bg-slate-700 hover:text-white transition-colors duration-150">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="text-xs text-slate-400 pt-4 border-t border-slate-700">
+                &copy; Goyazi. All rights reserved.
+            </div>
+        </aside>
+
+        <main class="flex-1 p-6 md:p-10 overflow-y-auto">
+            <button id="menu-toggle" class="md:hidden fixed top-4 right-4 z-40 p-2 bg-blue-600 text-white rounded-md shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+
+            <div class="max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-xl shadow-xl">
+                <header class="mb-8 text-center">
+                    <h1 class="text-4xl font-bold text-blue-700 mb-2">Goyazi Chromebook Return & Refund Policy</h1>
+                    <p class="text-lg text-slate-600">For GIS Parents - Effective [Insert Effective Date]</p>
+                </header>
+
+                <section id="overview" class="content-section mb-12">
+                    <h2 class="text-3xl font-semibold text-blue-600 border-b pb-2">Policy Overview</h2>
+                    <p>This document outlines the terms and conditions for returns and refunds of Chromebooks and Chrome Upgrade Licenses purchased by GIS parents from Goyazi. Our primary goal is to ensure a clear, fair, and transparent process for all our valued customers. This interactive guide is designed to help you quickly find the information you need regarding your purchase.</p>
+                </section>
+
+                <section id="eligibility" class="content-section mb-12">
+                    <h2 class="text-3xl font-semibold text-blue-600 border-b pb-2">1. Eligibility for Returns & Refunds</h2>
+                    <p>This section details when and how you might be eligible for a return or refund. It covers both the initial period after pickup and the manufacturer's warranty.</p>
+                    <h3 class="text-2xl font-semibold text-slate-700">A. Initial Return Period (14 Days from Pickup Date)</h3>
+                    <p>You may be eligible for a full refund or exchange if you return the Chromebook and Chrome Upgrade License within <strong>fourteen (14) calendar days</strong> from the date of pickup at the GIS IT Manager's office, provided the following conditions are met:</p>
+                    <ul>
+                        <li>The Chromebook is in its original, undamaged condition, free from any physical or liquid damage.</li>
+                        <li>All original packaging, accessories (charger, cables, manuals), and the complimentary carrying pouch (if already picked up) are included.</li>
+                        <li>The Chrome Upgrade License has <strong>not been activated or assigned</strong> to a Google account. If the license has been activated, its value may be deducted from the refund.</li>
+                        <li>A valid receipt of purchase from Goyazi is provided.</li>
+                    </ul>
+                    <h3 class="text-2xl font-semibold text-slate-700">B. Manufacturer Warranty (1 Year from Purchase Date)</h3>
+                    <p>All Chromebooks purchased from Goyazi come with a <strong>one (1) year manufacturer's warranty</strong> covering defects in materials and workmanship. This warranty period begins from the original date of purchase.</p>
+                    <ul>
+                        <li><strong>What it covers:</strong> Hardware malfunctions, manufacturing defects, and issues not caused by accidental damage, misuse, or unauthorized repairs.</li>
+                        <li><strong>Process for Warranty Claims:</strong> If your Chromebook experiences a defect covered by the manufacturer's warranty after the initial 14-day return period, please contact Goyazi Support immediately. We will guide you through the manufacturer's warranty claim process, which typically involves repair or replacement directly through the manufacturer. Goyazi will act as a facilitator in this process to ensure you receive the necessary support.</li>
+                        <li><strong>Exclusions:</strong> The manufacturer warranty does not cover accidental damage (e.g., drops, spills), cosmetic damage, normal wear and tear, lost or stolen devices, or issues arising from unauthorized modifications or repairs.</li>
+                    </ul>
+                </section>
+
+                <section id="non-refundable" class="content-section mb-12">
+                    <h2 class="text-3xl font-semibold text-blue-600 border-b pb-2">2. Non-Refundable Items/Situations</h2>
+                    <p>This section lists items or situations that are generally not eligible for a refund. Understanding these exceptions is important.</p>
+                    <ul>
+                        <li>Chromebooks returned after the 14-day initial return period, unless covered by a valid manufacturer's warranty claim.</li>
+                        <li>Chromebooks with physical damage, liquid damage, or signs of misuse.</li>
+                        <li>Chromebooks missing original packaging or essential accessories.</li>
+                        <li>Activated or assigned Chrome Upgrade Licenses (the cost of the license may be non-refundable or deducted from the total refund).</li>
+                        <li>Any third-party software or services purchased separately.</li>
+                        <li>Shipping costs (if applicable, though pickup is standard for GIS).</li>
+                    </ul>
+                </section>
+
+                <section id="initiate-claim" class="content-section mb-12">
+                    <h2 class="text-3xl font-semibold text-blue-600 border-b pb-2">3. How to Initiate a Return or Warranty Claim</h2>
+                    <p>If you need to make a return or warranty claim, these are the steps to follow. Clear communication helps us process your request efficiently.</p>
+                    <ol>
+                        <li><strong>Contact Goyazi Support:</strong> Send an email to [Your Support Email Address] or call us at [Your Support Phone Number].</li>
+                        <li><strong>Provide Details:</strong> Include your name, the parent's name on the receipt, receipt number, date of purchase, the Chromebook's serial number, and a detailed description of the issue or reason for return.</li>
+                        <li><strong>Await Instructions:</strong> Our support team will review your request and provide you with specific instructions on how to proceed, including return authorization (if applicable) and shipping details (if required for warranty service).</li>
+                    </ol>
+                </section>
+
+                <section id="refund-process" class="content-section mb-12">
+                    <h2 class="text-3xl font-semibold text-blue-600 border-b pb-2">4. Refund Process</h2>
+                    <p>This section explains how refunds are processed once a return is approved or a warranty claim results in a refund.</p>
+                    <ul>
+                        <li>Refunds will be processed to the original payment method used for the purchase.</li>
+                        <li>Please allow 5-10 business days for the refund to appear on your statement, depending on your bank or credit card company's processing times.</li>
+                        <li>If the Chrome Upgrade License was activated, its cost may be deducted from the total refund amount.</li>
+                    </ul>
+                </section>
+
+                <section id="changes" class="content-section mb-12">
+                    <h2 class="text-3xl font-semibold text-blue-600 border-b pb-2">5. Changes to This Policy</h2>
+                    <p>This section addresses how and when this policy might be updated. We strive to keep our policies current and transparent.</p>
+                    <p>Goyazi reserves the right to modify this Return and Refund Policy at any time. Any changes will be posted on our website and will be effective immediately upon posting.</p>
+                </section>
+
+                <section id="contact" class="content-section">
+                    <h2 class="text-3xl font-semibold text-blue-600 border-b pb-2">Contact Us</h2>
+                    <p>If you have any questions about this policy, your purchase, or need assistance with a return or warranty claim, please don't hesitate to reach out. We're here to help!</p>
+                    <p><strong>Goyazi Support</strong><br>
+                    Email: [Your Support Email Address]<br>
+                    Phone: [Your Support Phone Number]<br>
+                    Website: <a href="https://goyazi.com/business/managed-services-google-for-education/" class="text-blue-600 hover:text-blue-800 hover:underline" target="_blank" rel="noopener noreferrer">goyazi.com/business/managed-services-google-for-education/</a></p>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <button id="back-to-top" class="hidden fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-opacity duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+        </svg>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentSections = document.querySelectorAll('.content-section');
+            const backToTopButton = document.getElementById('back-to-top');
+
+            // Mobile menu toggle
+            if (menuToggle && sidebar) {
+                menuToggle.addEventListener('click', function () {
+                    sidebar.classList.toggle('open');
+                    // Change icon based on sidebar state
+                    if (sidebar.classList.contains('open')) {
+                        menuToggle.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>`;
+                    } else {
+                        menuToggle.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>`;
+                    }
+                });
+            }
+
+            // Close sidebar when a nav link is clicked on mobile
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (sidebar && sidebar.classList.contains('open')) {
+                        sidebar.classList.remove('open');
+                         menuToggle.innerHTML = `
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>`;
+                    }
+                });
+            });
+
+            // Active state for nav links based on scroll position
+            function updateActiveLink() {
+                let currentSectionId = '';
+                contentSections.forEach(section => {
+                    const sectionTop = section.offsetTop - 150; // Adjusted offset
+                    if (window.scrollY >= sectionTop) {
+                        currentSectionId = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', () => {
+                updateActiveLink();
+                // Show/hide back-to-top button
+                if (backToTopButton) {
+                    if (window.scrollY > 300) {
+                        backToTopButton.classList.remove('hidden');
+                    } else {
+                        backToTopButton.classList.add('hidden');
+                    }
+                }
+            });
+            updateActiveLink(); // Initial call
+
+            // Back to Top button functionality
+            if (backToTopButton) {
+                backToTopButton.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
