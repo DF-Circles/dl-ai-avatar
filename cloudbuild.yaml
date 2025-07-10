@@ -1,19 +1,26 @@
 timeout: "1200s"
 
 steps:
-  # Step 1: Fetch the script & requirements
+  # Step 1: Set up SSH for GitHub and clone repo
+  - name: 'gcr.io/cloud-builders/git'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        apt-get update && apt-get install -y openssh-client
+        mkdir -p ~/.ssh
+        gcloud secrets versions access latest --secret=github-ssh-key > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git clone git@github.com:DF-Circles/dl-ai-avatar.git
+
+  # Step 2: Fetch scripts from GCS
   - name: 'gcr.io/cloud-builders/gsutil'
     args:
       - cp
       - gs://dl-ai-avatar/scripts/script.py
       - gs://dl-ai-avatar/scripts/requirements.txt
       - .
-
-  # Step 2: Clone the repo
-  - name: 'gcr.io/cloud-builders/git'
-    args:
-      - clone
-      - https://github.com/DF-Circles/dl-ai-avatar.git
 
   # Step 3: Install dependencies & run extractor
   - name: 'python:3.9'
