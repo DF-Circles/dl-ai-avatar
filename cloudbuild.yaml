@@ -35,7 +35,7 @@ steps:
     args:
       - cp
       - documentation.txt
-      - gs://dl-ai-avatar/documentation.txt
+      - gs://dl-ai-avatar-docs/documentation.txt
 
   # Step 5: Logging
   - name: 'bash'
