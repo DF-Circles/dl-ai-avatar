@@ -1,12 +1,15 @@
-# 💰 __Circles Payments__
+---
+description: Deep funding Generic payment playbook for Circles
+---
 
-## __Deep funding Generic payment playbook for Circles__
-
-[Steps for Circle Members](circle_coordinators_payments.md)
-
-[Steps for Circle Coordinators](circle_members_payments.md)
+# Circles Payments
 
 
-__Video Tutorial__:
 
-<iframe src="https://drive.google.com/file/d/17hsr-i7QGY58qvWz-L0NJ8OxuxaQ9h25/preview" width="640" height="480" allowfullscreen></iframe>
+{% content-ref url="circles-payments-1/steps-for-circle-members" %}
+[steps-for-circle-members](circles-payments-1/steps-for-circle-members)
+{% endcontent-ref %}
+
+{% content-ref url="circles-payments-1/steps-for-circle-coordinators" %}
+[steps-for-circle-coordinators](circles-payments-1/steps-for-circle-coordinators)
+{% endcontent-ref %}
